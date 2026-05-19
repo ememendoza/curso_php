@@ -27,4 +27,9 @@ class Mueble extends Producto
         );
         return $productos;
     }
+
+    public function setEstado(string $estado)
+    {
+        $this->estado = $estado;
+    }
 }
