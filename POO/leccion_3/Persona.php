@@ -15,7 +15,7 @@ class Persona
 
     public function getDatosPersonales(): string
     {
-        return $datos = "
+        return "
             <h2>Datos Personales</h2>
             DPI: {$this->dpi}<br>
             Nombre: {$this->nombre}<br>

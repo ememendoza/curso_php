@@ -2,14 +2,14 @@
 
 class Operacion
 {
-    public $cantidadUno = 0;
-    public $cantidadDos = 0;
-    public $resultado = 0;
+    public int $cantidadUno = 0;
+    public int $cantidadDos = 0;
+    public int $resultado = 0;
 
-    function __construct($intCant1, $intCant2)
+    function __construct(int $cantidadUno, int $cantidadDos)
     {
-        $this->cantidadUno = $intCant1;
-        $this->cantidadDos = $intCant2;
+        $this->cantidadUno = $cantidadUno;
+        $this->cantidadDos = $cantidadDos;
     }
 
     public function getSuma()

@@ -1,8 +1,8 @@
 <?php
-require_once("./leccion_1/ClassOperacion.php");
-require_once("./leccion_2/ClassUsuario.php");
-require_once("./leccion_3/ClassEmpleado.php");
-require_once("./leccion_3/ClassCliente.php");
+require_once("./leccion_1/Operacion.php");
+require_once("./leccion_2/Usuario.php");
+require_once("./leccion_3/Empleado.php");
+require_once("./leccion_3/Cliente.php");
 
 
 function Operacion()

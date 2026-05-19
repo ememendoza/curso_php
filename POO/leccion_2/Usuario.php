@@ -15,7 +15,7 @@ class Usuario
         $this->email = $email;
         $this->tipo = $tipo;
         $this->clave = rand();
-        $this->fechaRegistro = date('Y-m-d H:m:s');
+        $this->fechaRegistro = date('Y-m-d H:i:s');
     }
 
     public function getClave(): string

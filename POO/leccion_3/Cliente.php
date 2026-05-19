@@ -1,5 +1,5 @@
 <?php
-require_once("ClassPersona.php");
+require_once("Persona.php");
 
 class Cliente extends Persona
 {
