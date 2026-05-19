@@ -3,6 +3,9 @@ require_once("./leccion_1/Operacion.php");
 require_once("./leccion_2/Usuario.php");
 require_once("./leccion_3/Empleado.php");
 require_once("./leccion_3/Cliente.php");
+require_once("./leccion_4/Producto.php");
+require_once("./leccion_4/Mueble.php");
+require_once("./leccion_4/Mesa.php");
 
 
 function Operacion()
@@ -39,4 +42,26 @@ function Herencia()
     print("Credito: " . $cliente->getCredito());
 }
 
-Herencia();
+function Polimorfismo()
+{
+    $producto = new Producto("HotWheels", 7.500);
+
+    print_r("<pre>");
+    print_r($producto);
+    print_r("</pre>");
+
+    $mueble = new Mueble("Cama", 2.300999, "Beige", "Madera");
+
+    print_r("<pre>");
+    print_r($mueble);
+    print_r("</pre>");
+
+    $mesa = new Mesa("Mesa Abstracta", 2.400000, "Beige", "Roble", "6 Puestos");
+    $mesa->setForma("Cuadrada");
+
+    print_r("<pre>");
+    print_r($mesa);
+    print_r("</pre>");
+}
+
+Polimorfismo();
