@@ -1,5 +1,7 @@
 <?php
 
+namespace Interfaces;
+
 require_once('Calcular.php');
 require_once('OperacionesBasicas.php');
 

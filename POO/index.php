@@ -9,7 +9,8 @@
 //require_once("./leccion_5/Empleado.php");
 //require_once("./leccion_5/Cliente.php");
 require_once("./leccion_6/Operacion.php");
-
+require_once("./leccion_7/Producto.php");
+require_once("./leccion_7/EntradaBlog.php");
 
 function Operacion()
 {
@@ -86,10 +87,19 @@ function Abstraccion()
 
 function Interfaces()
 {
-    $operacion = new Operacion();
+    $operacion = new Interfaces\Operacion();
     print($operacion->raizCuadrada(12) . '<br>');
     print($operacion->potencia(4, 2) . '<br>');
     print($operacion->calculosBasicos(20, 10, "-") . '<br>');
 }
 
-Interfaces();
+function Traits()
+{
+    $entradaBlog = new Traits\EntradaBlog("Las Nuevas Vulnerabilidades De Linux: El Terror de los Admins");
+    print("El link del blog es: " . $entradaBlog->getPostUrl() . '<br>');
+
+    $producto = new Traits\Producto("Teclado Magic Keyboard");
+    print("El link del producto es: " . $producto->getUrl());
+}
+
+Traits();

@@ -1,5 +1,7 @@
 <?php
 
+namespace Interfaces;
+
 interface Calcular
 {
     public function raizCuadrada(float $numero): float;
