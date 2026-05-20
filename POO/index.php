@@ -1,13 +1,14 @@
 <?php
-require_once("./leccion_1/Operacion.php");
-require_once("./leccion_2/Usuario.php");
+//require_once("./leccion_1/Operacion.php");
+//require_once("./leccion_2/Usuario.php");
 //require_once("./leccion_3/Empleado.php");
 //require_once("./leccion_3/Cliente.php");
-require_once("./leccion_4/Producto.php");
-require_once("./leccion_4/Mueble.php");
-require_once("./leccion_4/Mesa.php");
-require_once("./leccion_5/Empleado.php");
-require_once("./leccion_5/Cliente.php");
+//require_once("./leccion_4/Producto.php");
+//require_once("./leccion_4/Mueble.php");
+//require_once("./leccion_4/Mesa.php");
+//require_once("./leccion_5/Empleado.php");
+//require_once("./leccion_5/Cliente.php");
+require_once("./leccion_6/Operacion.php");
 
 
 function Operacion()
@@ -83,4 +84,12 @@ function Abstraccion()
     print($cliente->getMensaje());
 }
 
-Abstraccion();
+function Interfaces()
+{
+    $operacion = new Operacion();
+    print($operacion->raizCuadrada(12) . '<br>');
+    print($operacion->potencia(4, 2) . '<br>');
+    print($operacion->calculosBasicos(20, 10, "-") . '<br>');
+}
+
+Interfaces();
