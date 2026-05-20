@@ -1,11 +1,13 @@
 <?php
 require_once("./leccion_1/Operacion.php");
 require_once("./leccion_2/Usuario.php");
-require_once("./leccion_3/Empleado.php");
-require_once("./leccion_3/Cliente.php");
+//require_once("./leccion_3/Empleado.php");
+//require_once("./leccion_3/Cliente.php");
 require_once("./leccion_4/Producto.php");
 require_once("./leccion_4/Mueble.php");
 require_once("./leccion_4/Mesa.php");
+require_once("./leccion_5/Empleado.php");
+require_once("./leccion_5/Cliente.php");
 
 
 function Operacion()
@@ -64,4 +66,21 @@ function Polimorfismo()
     print_r("</pre>");
 }
 
-Polimorfismo();
+function Abstraccion()
+{
+    $empleado = new Empleado(1066285875, "Mario Mendoza", 24);
+    $empleado->setPuesto("Desarrollador");
+    print($empleado->getDatosPersonales());
+    $empleado->setMensaje("Soy un empleado de aplicaciones :)");
+
+    print($empleado->getMensaje());
+
+    $cliente = new Cliente(1065667832, "Camilo", 20);
+    $cliente->setCredito(28.322);
+    print($cliente->getDatosPersonales());
+    $cliente->setMensaje("Soy un cliente de la aplicación :)");
+
+    print($cliente->getMensaje());
+}
+
+Abstraccion();

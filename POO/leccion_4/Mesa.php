@@ -2,7 +2,7 @@
 
 require_once('Mueble.php');
 
-class Mesa extends Mueble
+final class Mesa extends Mueble
 {
     private string $forma;
     protected string $tamanio;
